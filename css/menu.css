@@ -1,0 +1,17 @@
+#menu {
+    grid-area: menu;
+    background-color: #CCC;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#menu a {
+    padding: 10px;
+    border-color: green;
+    border-style: solid;
+    margin: 4px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    background-color: lightgreen;
+}

@@ -1,0 +1,81 @@
+@import url("menu.css");
+@import url("header.css");
+@import url("content.css");
+@import url("footer.css");
+@import url("contact.css");
+
+a { 
+    color: #042;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 { 
+    color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+}
+
+p { 
+    color: #222;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px, 600px;
+    grid-template-rows: 150px, fr, 150px;
+    grid-template-areas: 
+    "header header header header header header"
+    "content content content content content menu"
+    "footer footer footer footer footer footer";
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+.left-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.center-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-areas: 
+        "header"
+        "menu"
+        "content"
+        "footer";
+    }
+
+    #menu {
+        flex-direction: row;
+    }
+}
+
